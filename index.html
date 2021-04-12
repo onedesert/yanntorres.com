@@ -59,13 +59,38 @@
             height: calc(100vh - 60px);
             width: 100vw;
         }
+
+        img.square-logo {
+            display: none;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media only screen and (max-width: 867px) {
+            div.centered {
+                position: relative;
+                width: 100%;
+                margin: 0;
+                top: 40%;
+                left: inherit;
+            }
+
+            img.long-logo {
+                display: none;
+            }
+        
+            img.square-logo {
+                display: block;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="wrap">
         <div class="centered">
-            <img alt="Personal long logo image" width="857" height="109" src="yann-logo.png">
+            <img class="long-logo" alt="Personal long logo image" width="857" height="109" src="yann-logo.png">
+            <img class="square-logo" alt="Personal long logo image" width="160" height="160" src="yann-logo_square.png">
             <span>I'm Yann, a software engineer, I've work with early stage startups 🦄 for the past 7 years.</span>
             <br />
             <span>I know how to code 🧑🏻‍💻, build products 🎈 and design infrastructure 🏗️.</span>
