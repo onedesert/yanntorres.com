@@ -45,19 +45,16 @@
             font-family: 'Nunito', sans-serif;
         }
 
-        div.centered {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            width: 857px;
-            height: 109px;
-            margin-left: -428px;
-            margin-top: -55px;
-        }
-
         div.wrap {
             height: calc(100vh - 60px);
             width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img.long-logo {
+            display: block;
         }
 
         img.square-logo {
@@ -74,14 +71,6 @@
         }
 
         @media only screen and (max-width: 867px) {
-            div.centered {
-                position: relative;
-                width: 100%;
-                margin: 0;
-                top: 40%;
-                left: inherit;
-            }
-
             img.long-logo {
                 display: none;
             }
